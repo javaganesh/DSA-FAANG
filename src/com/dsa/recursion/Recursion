@@ -1,0 +1,8 @@
+Recursion is a process in which a function gets repeated again and again until some base function is satisfied. It repeats and uses its previous values to form a sequence. The procedure applies a certain relation to the given function again and again until some base condition is met. It consists of two components:
+
+1) Base condition: In order to stop a recursive function, a condition is needed. This is known as a base condition. Base condition is very important. If the base condition is missing from the code then the function can enter into an infinite loop.
+
+
+
+ Recursive step:
+  It divides a big problem into small instances that are solved by the recursive function and later on recombined in the results.
