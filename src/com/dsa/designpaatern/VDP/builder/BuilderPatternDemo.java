@@ -26,9 +26,9 @@ class User {
         System.out.println("Phone : " + phone);
         System.out.println("City  : " + city);
         System.out.println("Age   : " + age);
+
     }
 
-    // Static Builder Class
     public static class UserBuilder {
 
         private String name;
