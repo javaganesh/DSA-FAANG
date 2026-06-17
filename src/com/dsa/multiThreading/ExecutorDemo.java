@@ -1,0 +1,30 @@
+package com.dsa.multiThreading;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorDemo {
+    public static void main(String[] args) {
+        ExecutorService executor =
+                Executors.newFixedThreadPool(3);
+
+        for(int i = 1; i <= 10; i++) {
+            int taskId = i;
+            executor.submit(() -> {
+                try {
+                    System.out.println(
+                            "Task " + taskId +
+                                    " executed by " +
+                                    Thread.currentThread().getName()
+                    );
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+
+                }
+
+            });
+        }
+        executor.shutdown();
+
+    }
+}
