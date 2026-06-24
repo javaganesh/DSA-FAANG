@@ -76,4 +76,11 @@ public class MinHeap {
         System.out.println("After inserting 5:");
         minHeap.printHeap();
     }
+
+    public void printHeap1() {
+        System.out.println();
+    }
+
+    public void print() {
+    }
 }
